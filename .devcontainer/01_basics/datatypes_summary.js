@@ -36,3 +36,7 @@ let myobj=
 console.log(typeof myobj); //object
 console.log(typeof arr); //object
 
+
+
+
+
