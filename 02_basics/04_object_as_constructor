@@ -1,0 +1,51 @@
+
+
+let myCar=new Object(); //Javascript provides a special construtor called Object() to build the object.
+myCar.brand='-Volkswagen';
+myCar.colour='Black',
+myCar.year=2008
+
+console.log(myCar.brand);//Accessing the property
+console.log(myCar["colour"]);
+console.log(myCar["year"]);
+console.log(myCar["bonet"]); //Unassigned properties of an object are undefined
+
+
+let regularUser=
+{
+    email:'aman@gmail.com',
+    fullName:{
+          firstName:'Aman',
+          lastName:'Biswas',
+    }
+}
+console.log(regularUser.fullName);
+
+//Combining two objects
+let obj1={1:'a',2:'b'}
+let obj2={3:'c',4:'d'}
+let obj3=Object.assign({},obj1,obj2)
+console.log(obj3);
+console.log(obj3 === obj1);
+
+let obj4={...obj1,...obj2} //Using spread operator we can combine the objects
+console.log(obj4);
+
+let obj5=[
+    {
+        name:'Ankita',
+        age:23,
+        city:'kerala'
+    },
+    {
+        name:'Hazrat',
+        age:21,
+        city:'Noida'
+    }
+]
+console.log(obj5[0]);
+console.log(obj5[1]);
+console.log(Object.keys(myCar)); //All the keys are now stored in an array and now we can apply loop into it
+
+
+
