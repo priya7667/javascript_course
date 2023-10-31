@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation by class name</title>
+</head>
+<body>
+
+    <ul>
+        <li class="cl">list1</li>
+        <li>list2</li>
+        <li class="cl">list3</li>
+    </ul>
+    <script>
+        let elm=document.getElementsByClassName("cl")
+        for(let i=0;i<elm.length;i++)
+        {
+        elm[i].style.backgroundColor="blue";
+        }
+    </script>
+    
+</body>
+</html>
