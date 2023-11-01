@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="intro">Heading</h2>
+    <div class="div1">
+        <p class="intro">Pragraph1</p>
+        <h2 class="intro">Heading2</h2>
+        <p>Paragraph 2</p>
+        <h>Heading 3</h>
+        <p class="intro">Paragraph 3</p>
+
+    </div>
+    <script>
+        let elm=document.querySelectorAll("p.intro")
+        console.log(elm);
+        for(let i=0;i<elm.length;i++)
+        {
+            elm[i].style.color="purple";
+        }
+    </script>
+</body>
+</html>
