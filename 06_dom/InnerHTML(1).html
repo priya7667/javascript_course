@@ -1,0 +1,21 @@
+<!-- InnerHTML sets or returns the html content of an element. -->
+
+<!-- Example 1: To fetch the content of an element -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic work of Inner HTML in DOM</title>
+</head>
+<body>
+    <div id="intro">
+        <p>Hello this is a p tag</p>
+    </div>
+    <script>
+        let elm=document.getElementById('intro');
+        let content=elm.innerHTML;
+        console.log(content);
+    </script>
+</body>
+</html>
