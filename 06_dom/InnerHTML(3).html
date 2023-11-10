@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML Work</title>
+</head>
+<body>
+    <button id="myButton">Click me once more</button>
+    <p id="myOutput">Hey there</p>
+    <script>
+        const myButton=document.getElementById('myButton');
+        const myOutput=document.getElementById('myOutput')
+        myButton.addEventListener('click',()=>
+        {
+            myOutput.innerHTML='Hello guzmaan';
+
+        })
+    </script>
+
+</body>
+</html>
