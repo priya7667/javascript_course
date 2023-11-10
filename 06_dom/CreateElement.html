@@ -1,0 +1,33 @@
+
+
+
+
+<!--Step-1) Create the element first like which tag you want to create
+Step-2) Add the text to the element
+Step-3) Finally add the text to the element -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating and appending element</title>
+</head>
+<body>
+    <div id="new">
+        <p id="p1">Tutorix</p>
+        <p id="p2">Tutorialspoint</p>
+     </div>
+     <script>
+        let tag = document.createElement("p");
+        let text = document.createTextNode("Tutorix is the best e-learning platform");
+        tag.appendChild(text);
+        let element = document.getElementById("new");
+        element.appendChild(tag);
+     </script>
+  
+
+</body>
+</html>
