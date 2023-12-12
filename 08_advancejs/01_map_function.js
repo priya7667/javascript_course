@@ -1,26 +1,15 @@
-const arr=[5,1,2,3,6]
-function double(x)
+const arr=[5,1,2,3,6];
+const doubleNumbers=arr.map(num=>num*2);
+console.log(doubleNumbers);
+
+//Here we have an array i.e. arr1 where we have stored some numbers and we want to perform some calculations but also don't want 
+//to mess with the original array.
+//It is used when we want to transform each elements of the array
+const arr1=[9,8,7,6,5];
+let arr2=(num1)=>
 {
-    return x*2;
+    return num1*5;
 }
-const output=arr.map(double);
-console.log(output);
-
-
-
-const result=arr.map(function triple(y)
-{
-    return y*3;
-});
-console.log(result);
-
-
-function binary(z)
-{
-    return z.toString(2);
-}
-const res=arr.map((z) =>
-{
-    return z.toString(2);
-});
-console.log(res);
+let num2=arr1.map(arr2);
+console.log(num2);
+console.log(arr1);
