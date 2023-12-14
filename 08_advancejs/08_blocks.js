@@ -15,3 +15,21 @@ const z=65
 console.log(x); //90
 console.log(y); //98;
 console.log(z); //65
+
+
+//Illegal Shadowing --> We can shadow var variable by let variable but the vice-versa is not possible,which means we cannot 
+//shadow let variable by var variable.This is known as illeagal shadowing.
+//eg.-->
+function func()
+{
+   var a='Geeks';
+   let b='Geeks';
+   if(true)
+   {
+      let a='GeeksForGeeks'; //Legal Shadowing
+      //var b='Geeks'; Illegal Shadowing
+      console.log(a); //GeeksForGeeks
+      //console.log(b);Error
+   }
+}
+func();
